@@ -7,7 +7,7 @@ export default new Vue({
 const latticeType = "";
 const latticeParams={};
 
-latticrCalculation(latticeType, latticeParams);
+latticeCalculation(latticeType, latticeParams);
 
 
 function latticeCalculation(latticetype, latticeparams){

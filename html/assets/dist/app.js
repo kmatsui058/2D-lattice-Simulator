@@ -3,29 +3,28 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = {
-    data: function data() {
-        return {
-            message: "Hello Vue !!!",
-            bravaisLattices: ["oblique", "rectangular", "centerRectanglar", "hexiagonal", "square"],
-            choosenBravaisLattice: "",
-            latticeConstantA: 0,
-            latticeConstantB: 0,
-            choosenUnitAngle: "rad",
-            latticeConstantTheta: 0
+  data: function data() {
+    return {
+      message: "Hello Vue !!!",
+      bravaisLattices: ["oblique", "rectangular", "centerRectanglar", "hexiagonal", "square"],
+      choosenBravaisLattice: "",
+      latticeConstantA: 0,
+      latticeConstantB: 0,
+      choosenUnitAngle: "rad",
+      latticeConstantTheta: 0
+    };
+  },
 
-        };
-    },
-
-    methods: {}
+  methods: {}
 };
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('p',[_vm._v("Choose Bravais lattices")]),_vm._v(" "),_c('form',[_vm._l((_vm.bravaisLattices),function(lattice){return [_c('label',{attrs:{"id":lattice}},[_vm._v(_vm._s(lattice))]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.choosenBravaisLattice),expression:"choosenBravaisLattice"}],attrs:{"type":"radio","name":"chooseBravaisLattice","id":lattice},domProps:{"value":lattice,"checked":_vm._q(_vm.choosenBravaisLattice,lattice)},on:{"change":function($event){_vm.choosenBravaisLattice=lattice}}}),_vm._v(" "),_c('br',{key:lattice})]}),_vm._v(" "),_c('p',[_vm._v("You choosed \""+_vm._s(_vm.choosenBravaisLattice)+"\"")])],2),_vm._v(" "),(_vm.choosenBravaisLattice.toString() == 'oblique')?_c('form',[_c('p',[_vm._v("Input lattice parameter")]),_vm._v(" "),_c('label',[_vm._v("a")]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.latticeConstantA),expression:"latticeConstantA"}],attrs:{"type":"number","id":"lattice-constant-a"},domProps:{"value":(_vm.latticeConstantA)},on:{"input":function($event){if($event.target.composing){ return; }_vm.latticeConstantA=$event.target.value}}}),_vm._v(" "),_c('label',[_vm._v("b")]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.latticeConstantB),expression:"latticeConstantB"}],attrs:{"type":"number","id":"lattice-constant-b"},domProps:{"value":(_vm.latticeConstantB)},on:{"input":function($event){if($event.target.composing){ return; }_vm.latticeConstantB=$event.target.value}}}),_vm._v(" "),_c('br'),_vm._v(" "),_c('label',[_vm._v("theta ["+_vm._s(_vm.choosenUnitAngle)+"]")]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.latticeConstantTheta),expression:"latticeConstantTheta"}],attrs:{"type":"number","id":"lattice-Constant-Theta"},domProps:{"value":(_vm.latticeConstantTheta)},on:{"input":function($event){if($event.target.composing){ return; }_vm.latticeConstantTheta=$event.target.value}}}),_vm._v(" "),_c('br'),_vm._v(" "),_c('label',[_vm._v("rad")]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.choosenUnitAngle),expression:"choosenUnitAngle"}],attrs:{"type":"radio","name":"chooseUnitAngle","checked":"","value":"rad"},domProps:{"checked":_vm._q(_vm.choosenUnitAngle,"rad")},on:{"change":function($event){_vm.choosenUnitAngle="rad"}}}),_vm._v(" "),_c('label',[_vm._v("deg")]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.choosenUnitAngle),expression:"choosenUnitAngle"}],attrs:{"type":"radio","name":"chooseUnitAngle","value":"deg"},domProps:{"checked":_vm._q(_vm.choosenUnitAngle,"deg")},on:{"change":function($event){_vm.choosenUnitAngle="deg"}}}),_vm._v(" "),_c('br')]):_vm._e()])}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('p',[_vm._v("Choose Bravais lattices")]),_vm._v(" "),_c('form',[_vm._l((_vm.bravaisLattices),function(lattice){return [_c('label',{attrs:{"for":lattice}},[_vm._v(_vm._s(lattice))]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.choosenBravaisLattice),expression:"choosenBravaisLattice"}],attrs:{"type":"radio","name":"chooseBravaisLattice","id":lattice},domProps:{"value":lattice,"checked":_vm._q(_vm.choosenBravaisLattice,lattice)},on:{"change":function($event){_vm.choosenBravaisLattice=lattice}}}),_vm._v(" "),_c('br')]}),_vm._v(" "),_c('p',[_vm._v("You choosed \""+_vm._s(_vm.choosenBravaisLattice)+"\"")])],2),_vm._v(" "),(_vm.choosenBravaisLattice.toString() == 'oblique')?_c('form',[_c('p',[_vm._v("Input lattice parameter")]),_vm._v(" "),_c('label',[_vm._v("a\n            "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.latticeConstantA),expression:"latticeConstantA"}],attrs:{"type":"number","id":"lattice-constant-a"},domProps:{"value":(_vm.latticeConstantA)},on:{"input":function($event){if($event.target.composing){ return; }_vm.latticeConstantA=$event.target.value}}})]),_vm._v(" "),_c('label',[_vm._v("b\n            "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.latticeConstantB),expression:"latticeConstantB"}],attrs:{"type":"number","id":"lattice-constant-b"},domProps:{"value":(_vm.latticeConstantB)},on:{"input":function($event){if($event.target.composing){ return; }_vm.latticeConstantB=$event.target.value}}})]),_vm._v(" "),_c('br'),_vm._v(" "),_c('label',[_vm._v("theta ["+_vm._s(_vm.choosenUnitAngle)+"]\n            "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.latticeConstantTheta),expression:"latticeConstantTheta"}],attrs:{"type":"number","id":"lattice-Constant-Theta"},domProps:{"value":(_vm.latticeConstantTheta)},on:{"input":function($event){if($event.target.composing){ return; }_vm.latticeConstantTheta=$event.target.value}}})]),_vm._v(" "),_c('br'),_vm._v(" "),_c('label',[_vm._v("rad\n            "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.choosenUnitAngle),expression:"choosenUnitAngle"}],attrs:{"type":"radio","name":"chooseUnitAngle","checked":"","value":"rad"},domProps:{"checked":_vm._q(_vm.choosenUnitAngle,"rad")},on:{"change":function($event){_vm.choosenUnitAngle="rad"}}})]),_vm._v(" "),_c('label',[_vm._v("deg\n            "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.choosenUnitAngle),expression:"choosenUnitAngle"}],attrs:{"type":"radio","name":"chooseUnitAngle","value":"deg"},domProps:{"checked":_vm._q(_vm.choosenUnitAngle,"deg")},on:{"change":function($event){_vm.choosenUnitAngle="deg"}}})]),_vm._v(" "),_c('br')]):_vm._e()])}
 __vue__options__.staticRenderFns = []
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -34,7 +33,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-333cbefb", __vue__options__)
   } else {
-    hotAPI.rerender("data-v-333cbefb", __vue__options__)
+    hotAPI.reload("data-v-333cbefb", __vue__options__)
   }
 })()}
 },{"vue":6,"vue-hot-reload-api":5}],2:[function(require,module,exports){
@@ -62,7 +61,7 @@ exports.default = new _vue2.default({
 var latticeType = "";
 var latticeParams = {};
 
-latticrCalculation(latticeType, latticeParams);
+latticeCalculation(latticeType, latticeParams);
 
 function latticeCalculation(latticetype, latticeparams) {
     if (latticetype == "oblique") {
